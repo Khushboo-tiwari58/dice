@@ -1,0 +1,102 @@
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(5, 5, 5);
+}
+.wrapper{
+  position:relative;
+  width: 400px;
+  height: 500px;
+  background-color: black;
+  box-shadow: 0 0 50px aqua;
+  border-radius: 20px;
+  padding: 40px;
+}
+.form-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:100%;
+}
+h2{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.input-group{
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid whitesmoke;
+}
+.input-group label{
+  position: absolute;
+  top: 50%;
+  right: 75%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  transition: .5s;
+  color: white;
+  pointer-events: none;
+}
+.input-group input{
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  color: white;
+  padding: 0 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.input-group input:focus~label,
+.input-group input:valid~label{
+   top: -5px;
+}
+.remember{
+  margin: -5px 0 15px 5px;
+}
+.remember label{
+  font-size: 14px;
+  color: white;
+}
+.remember label input{
+  accent-color: aqua;
+}
+button{
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: aqua;
+  box-shadow: 0 0 10px aqua;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-weight: 500;
+}
+.signup-link{
+  font-size: 14px;
+  text-align: center;
+  margin: 15px 0;
+}
+.signup-link p{
+  color: white;
+}
+.signup-link p a{
+  color: aqua;
+  text-decoration: none;
+  font-weight: 500;
+}
+.signup-link p a:hover{
+  text-decoration: underline;
+}
